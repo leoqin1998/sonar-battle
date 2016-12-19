@@ -39,7 +39,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Resources/Headers/player.h" />
 		<Unit filename="Resources/Sources/main.cpp" />
+		<Unit filename="Resources/Sources/player.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
