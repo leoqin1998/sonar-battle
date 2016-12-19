@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+
 #include <iostream>
 
 int main()
@@ -17,8 +18,6 @@ int main()
     }
 
     sf::Text fpsCounter = sf::Text("FPS: ", defaultFont, 15);
-    fpsCounter.setOutlineColor(sf::Color::Black);
-    fpsCounter.setOutlineThickness(1.f);
     fpsCounter.setPosition(500.f, 25.f);
 
     while (win.isOpen())
@@ -33,15 +32,17 @@ int main()
             }
         }
 
+        // Main game loop (logic)
         while (acc > timestep)
         {
             acc -= timestep;
-
             //TODO: Gamelogic here
         }
 
-        // FPS is limited by the computer; we don't need to do anything
-        win.clear(sf::Color(95,145,220, 255));
+         // FPS is limited by the computer; we don't need to do anything
+        win.clear(sf::Color(120, 165, 240));
+        //Alternate colour:
+        //win.clear(sf::Color(95,145,220, 255));
         win.draw(fpsCounter);
         win.display();
     }
