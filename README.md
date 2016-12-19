@@ -5,16 +5,16 @@ linear rockets
 
 movement:
 
-  possibility 1:
-    - mouse and keyboard
-      - mouse points ur rocket
-      - keyboard mouse with relation to direction faced
-      - keyboard to launc weapons
-  
-  possibility 2:
-    - mouse and keyboard
-      - mouse points ur rocket and rocket always moves slowly but u can speed up
-      - keyboard to fire weapons/sonars
+possibility 1:
+  - mouse and keyboard
+    - mouse points ur rocket
+    - keyboard mouse with relation to direction faced
+    - keyboard to launc weapons
+
+possibility 2:
+  - mouse and keyboard
+    - mouse points ur rocket and rocket always moves slowly but u can speed up
+    - keyboard to fire weapons/sonars
 possible weapons: 
   bombs
   
