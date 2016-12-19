@@ -56,7 +56,7 @@
 			<Add library="sfml-system" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/sfml/lib" />
 		</Linker>
-		<Unit filename="testing.cpp" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
