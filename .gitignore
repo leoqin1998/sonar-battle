@@ -1,2 +1,5 @@
 bin/
 obj/
+*.depend
+.git
+*.layout
