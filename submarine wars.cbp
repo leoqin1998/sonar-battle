@@ -48,6 +48,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++0x" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/sfml/include" />
 		</Compiler>
 		<Linker>
@@ -58,9 +59,13 @@
 			<Add library="sfml-system" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/sfml/lib" />
 		</Linker>
+		<Unit filename="include/MapLoader.h" />
 		<Unit filename="include/player.h" />
+		<Unit filename="include/tinyxml2.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/MapLoader.cpp" />
 		<Unit filename="src/player.cpp" />
+		<Unit filename="src/tinyxml2.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
