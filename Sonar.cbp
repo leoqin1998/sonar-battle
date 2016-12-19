@@ -15,11 +15,11 @@
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
-					<Add library="sfml-graphics" />
-					<Add library="sfml-window" />
-					<Add library="sfml-system" />
-					<Add library="sfml-audio" />
-					<Add library="sfml-network" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-network-d" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -32,24 +32,24 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="Resources/Headers" />
 		</Compiler>
 		<Unit filename="Resources/Headers/player.h" />
 		<Unit filename="Resources/Sources/main.cpp" />
 		<Unit filename="Resources/Sources/player.cpp" />
 		<Extensions>
-			<code_completion>
-				<search_path add="Resources" />
-			</code_completion>
-			<debugger>
-				<search_path add="Resources" />
-			</debugger>
+			<code_completion />
+			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
