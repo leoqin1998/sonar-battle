@@ -8,8 +8,6 @@ class MapLoader
         MapLoader();
         virtual ~MapLoader();
 
-    protected:
-
     private:
 };
 
