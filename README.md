@@ -23,6 +23,7 @@ shields
 sonar for vision (only goes on cooldown if u turn it off)
   - a very small range of vision when you turn on small sonar bubble
     - you can been easily detected by others
+    
 ACTIVE PING (on cooldown)
   - sends out sonar wave (maybe 45 degrees)
   
