@@ -4,6 +4,7 @@ Sonar battle game as inspired by 300 Mechanics: http://www.squidi.net/three/entr
 linear rockets
 
 movement:
+
   possibility 1:
     - mouse and keyboard
       - mouse points ur rocket
