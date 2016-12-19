@@ -1,6 +1,11 @@
 #include <SFML/Graphics.hpp>
 
 #include <iostream>
+#include <string>
+
+unsigned int getFPS(const sf::Time& time) {
+     return (unsigned int)(1000000.0f / time.asMicroseconds());
+}
 
 int main()
 {
@@ -12,16 +17,18 @@ int main()
 
     sf::Font defaultFont;
 
-    if (!defaultFont.loadFromFile("assets/kenpixel.ttf"))
+    if (!defaultFont.loadFromFile("Assets/Fonts/kenpixel.ttf"))
     {
         std::cout << "Error loading font!" << std::endl;
     }
 
     sf::Text fpsCounter = sf::Text("FPS: ", defaultFont, 15);
-    fpsCounter.setPosition(500.f, 25.f);
+    fpsCounter.setPosition(550.f, 15.f);
 
     while (win.isOpen())
     {
+        acc+= mainClock.restart();
+
         // Events should not be limited by FPS
         sf::Event event;
         while (win.pollEvent(event))
@@ -43,6 +50,7 @@ int main()
         win.clear(sf::Color(120, 165, 240));
         //Alternate colour:
         //win.clear(sf::Color(95,145,220, 255));
+        fpsCounter.setString("FPS:  " + std::to_string(getFPS(acc)));
         win.draw(fpsCounter);
         win.display();
     }
