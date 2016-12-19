@@ -38,13 +38,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="Resources/Headers" />
 		</Compiler>
 		<Unit filename="Resources/Headers/player.h" />
 		<Unit filename="Resources/Sources/main.cpp" />
 		<Unit filename="Resources/Sources/player.cpp" />
 		<Extensions>
-			<code_completion />
-			<debugger />
+			<code_completion>
+				<search_path add="Resources" />
+			</code_completion>
+			<debugger>
+				<search_path add="Resources" />
+			</debugger>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

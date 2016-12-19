@@ -2,3 +2,9 @@
 1482111966 source:/home/vortex/Documents/GitProjects/Leo/sonar-battle/Resources/Sources/main.cpp
 	<SFML/Graphics.hpp>
 
+1482116261 source:/home/vortex/Documents/GitProjects/Leo/sonar-battle/Resources/Sources/player.cpp
+	"SFML/Graphics.hpp"
+	"player.h"
+
+1482115124 /home/vortex/Documents/GitProjects/Leo/sonar-battle/Resources/Headers/player.h
+
